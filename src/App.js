@@ -11,16 +11,16 @@ function App() {
       <Switch>
         {/* Redirect to quotes as default */}
         <Route path='/' exact>
-          <Redirect to='/quotes' />
+          <Redirect to='/quote' />
         </Route>
 
         {/* All quote */}
-        <Route path='/quotes' exact>
+        <Route path='/quote' exact>
           <AllQuotes />
         </Route>
 
         {/* Quote detail when we click on a specific quote */}
-        <Route path='/quotes/:quoteId'>
+        <Route path='/quote/:quoteId'>
           <QuoteDetail />
         </Route>
 
